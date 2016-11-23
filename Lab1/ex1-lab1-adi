@@ -1,0 +1,12 @@
+tic
+B = 0;
+for i = 1: size(A)
+B = B + A(i);
+end
+toc
+Elapsed time is 0.067244 seconds.
+>> tic
+C = cumsum(A);
+D = C(10000);
+toc
+Elapsed time is 0.004879 seconds.
